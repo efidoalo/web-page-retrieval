@@ -40,7 +40,7 @@ int main()
   struct sockaddr_in client_addr;
   client_addr.sin_family = AF_INET;
   client_addr.sin_port = 2417;
-  if (inet_aton("192.168.1.109", &client_addr.sin_addr)==-1) {
+  if (inet_aton("110.101.111.100", &client_addr.sin_addr)==-1) {
     printf("\nerror converting local ip to network byte order");
     return 0;
   }
